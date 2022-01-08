@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Vitro_core';
+    src: url(../ttf/vitcore.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'd2coding';
+  src: url(../ttf/D2Coding-Ver1.3-20171129.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url(../ttf/HSSaemaul.otf) format('woff');
+}
+@font-face {
+  font-family: 'Eulyoo1945-SemiBold';
+  src: url(../ttf/Eulyoo1945-SemiBold.otf) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Eulyoo1945-Regular';
+  src: url(../ttf/Eulyoo1945-Regular.otf) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,8 @@
+#nav #leftnavwrap .DnMmode .sunmoon {
+    animation: sunspin 10s linear infinite alternate;
+}
+@keyframes sunspin {
+    from{transform:scale(0.8);}
+    to{transform:scale(1);}
+}
+/* 사진이 아니면 이상해진다 */
