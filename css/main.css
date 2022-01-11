@@ -430,7 +430,7 @@ img.clip {
   color: black;
 }
 #experience #experiencewrap #experiencecontent #experiencetitle > a:hover {
-  transform: translate(0px, 0px);
+  transform: translate(1px, 1px);
   transition: all 100ms;
   box-shadow: 5px 5px rgba(232, 56, 56, 0.3);
 }
