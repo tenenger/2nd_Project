@@ -1,42 +1,49 @@
-$(function () {
-    $('#homebtn').on( 'click', function(a) {
-        a.preventDefault();
-        $('html,body').animate({scrollTop:0},600);
-    })
-})
-$(function () {
-    $('#abtbtn, #exp__contact__btn').on( 'click', function(b) {
-        b.preventDefault();
-        $('html,body').animate({scrollTop:610},600);
-    })
-})
-$(function () {
-    $('#skillbtn').on( 'click', function(c) {
-        c.preventDefault();
-        $('html,body').animate({scrollTop:1200},600);
-    })
-})
-$(function () {
-    $('#pjtbtn').on( 'click', function(d) {
-        d.preventDefault();
-        $('html,body').animate({scrollTop:2320},600);
-    })
-})
-$(function () {
-    $('#edubtn').on( 'click', function(e) {
-        e.preventDefault();
-        $('html,body').animate({scrollTop:5450},600);
-    })
-})
-$(function () {
-    $('#expbtn').on( 'click', function(f) {
-        f.preventDefault();
-        $('html,body').animate({scrollTop:7370},600);
-    })
-})
-$(function () {
-    $('#archivbtn').on( 'click', function(f) {
-        f.preventDefault();
-        $('html,body').animate({scrollTop:8430},600);
-    })
-})
+const homebtn = document.querySelector("#homebtn");
+const homescroll = document.querySelector("#main");
+const abtbtn = document.querySelector("#abtbtn");
+const abtscroll = document.querySelector("#myself");
+const skillbtn = document.querySelector("#skillbtn");
+const skillscroll = document.querySelector("#skill");
+const pjtbtn = document.querySelector("#pjtbtn");
+const pjtscroll = document.querySelector("#project");
+const edubtn = document.querySelector("#edubtn");
+const eduscroll = document.querySelector("#education");
+const expbtn = document.querySelector("#expbtn");
+const expscroll = document.querySelector("#experience");
+const archivbtn = document.querySelector("#archivbtn");
+const archivscroll = document.querySelector("#archive");
+const exp__contact__btn = document.querySelector("#exp__contact__btn");
+
+homebtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  homescroll.scrollIntoView({ behavior: "smooth" });
+});
+abtbtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  abtscroll.scrollIntoView({ behavior: "smooth" });
+});
+skillbtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  skillscroll.scrollIntoView({ behavior: "smooth" });
+});
+pjtbtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  pjtscroll.scrollIntoView({ behavior: "smooth" });
+});
+edubtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  eduscroll.scrollIntoView({ behavior: "smooth" });
+});
+expbtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  expscroll.scrollIntoView({ behavior: "smooth" });
+});
+archivbtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  archivscroll.scrollIntoView({ behavior: "smooth" });
+});
+
+exp__contact__btn.addEventListener("click", (event) => {
+  event.preventDefault();
+  abtscroll.scrollIntoView({ behavior: "smooth" });
+});
