@@ -649,11 +649,21 @@ img.clip {
   #archive__wrap
   #archive__wrap__contents
   > a
-  > .archive__wrap__content.coding {
+  > .archive__wrap__content.studying_python {
   background-image: url("../img/Archive/git/studying_python.png");
   background-position: center;
   background-size: cover;
 }
+#archive
+  #archive__wrap
+  #archive__wrap__contents
+  > a
+  > .archive__wrap__content.studying_javascript {
+  background-image: url("../img/Archive/git/studying_javascript.png");
+  background-position: center;
+  background-size: cover;
+}
+
 #archive
   #archive__wrap
   #archive__wrap__contents
