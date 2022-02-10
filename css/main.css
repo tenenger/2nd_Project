@@ -688,6 +688,16 @@ img.clip {
   #archive__wrap
   #archive__wrap__contents
   > a
+  > .archive__wrap__content.diff_color_catch {
+  background-image: url("../img/Archive/tstory/diffColorCatch.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#archive
+  #archive__wrap
+  #archive__wrap__contents
+  > a
   > .archive__wrap__content.Tistory:hover {
   background-image: url("../img/Archive/tstory/tistory-logo.svg");
   background-position: center;
