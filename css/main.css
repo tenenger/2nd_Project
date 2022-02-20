@@ -45,12 +45,13 @@ body {
   font-family: "Vitro_core";
 }
 img {
-  width: 45px;
+  width: 100%;
 }
 img.clip {
   float: left;
   padding-top: 12px;
   padding-right: 10px;
+  width: 45px;
 }
 .text_emphasis {
   color: rgba(238, 59, 39, 0.864);

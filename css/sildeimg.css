@@ -1,38 +1,59 @@
-.section .slidewrap{
-    max-width:500px;
-    margin:0 auto;
-    overflow:hidden;
-} 
-.section .slidelist{
-    white-space:nowrap;
-    font-size:0;
+li {
+  list-style: none;
 }
-.section .slidelist li{
-    display:inline-block;
-    vertical-align:middle;
-    width:100%;
-    transition:all 5s;
+/* 이미지 슬라이드 시작 */
+.slide_wrapper {
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
 }
-.section .slidelist li a{
-    display:block;
-    position:relative;
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.section .slidelist li a img{
-    width:100%;
+.slides.animated {
+  transition: 0.5s ease-out;
 }
-.section .slidelist label{
-    position:absolute;
-    z-index:10;
-    top:50%;
-    transform:translateY(-50%);
-    padding:50px;
-    cursor:pointer;
+.slides li {
+  width: 720px;
+  height: 400px;
+  background-color: #ccc;
+  float: left;
 }
-.section .sildelist .left{
-    left:30px;
-    background:url('./img/left.png') center center / 100% no-repeat;
+/* slides의 li에 margin-right를 30px를 전부 주지만, 마지막 child는 margin-right를 안준다. */
+.slides li:not(:last-child) {
+  margin-right: 30px;
 }
-.section .sildelist .right{
-    right:30px;
-    background: url('./img/right.png') center center / 100% no-repeat;
+/* 이미지 슬라이드 종료 */
+/* 슬라이드 버튼 시작 */
+.controls {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
+.slideBtn {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 20px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  top: calc(50% - 24px); /* 50% - 버튼의 height의 반 */
+  user-select: none; /* 드래그 방지 */
+}
+.slideBtn.prev {
+  left: 10px;
+}
+.slideBtn.next {
+  right: 10px;
+}
+.prevBtn_SVG_big {
+  width: 20px;
+  height: 20px;
+}
+/* 슬라이드 버튼 종료 */
